@@ -21,7 +21,7 @@ const ShoppingListItem = ({p}) => {
 				<Text style={styles.productAmount}>{p.amount}</Text>
 			</View>
 			<Pressable onPress={() => boughtProduct()} style={styles.boughtButton}>
-				<Text>Bought</Text>
+				<Text>{itemHasBeenBought ? 'Undo' : 'Bought'}</Text>
 			</Pressable>
 		</View>
 	);
