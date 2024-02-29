@@ -8,7 +8,7 @@ import ShoppingListItem from './components/ShoppingListItem';
 
 //const databaseConnection = SQLite.openDatabase('ShoppingListDatabase.db');
 
-function openDatabaseConnection() {
+export function openDatabaseConnection() {
 	return SQLite.openDatabase('ShoppingListDatabase.db');
 }
 
